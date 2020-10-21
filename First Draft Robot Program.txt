@@ -1,0 +1,25 @@
+async function startProgram() {
+	setMainLed({ r: 255, g: 35, b: 39 });
+	await roll(0, 20, 4);
+	setMainLed({ r: 255, g: 109, b: 38 });
+	stopRoll();
+	await roll(180, 20, 4);
+	stopRoll();
+	await roll(270, 20, 4);
+	setMainLed({ r: 255, g: 248, b: 52 });
+	stopRoll();
+	await roll(90, 20, 4);
+	stopRoll();
+	await roll(180, 20, 4);
+	setMainLed({ r: 255, g: 70, b: 225 });
+	stopRoll();
+	await roll(0, 20, 4);
+	stopRoll();
+	await roll(90, 20, 4);
+	setMainLed({ r: 51, g: 27, b: 255 });
+	stopRoll();
+	await roll(270, 20, 4);
+	setMainLed({ r: 35, g: 255, b: 34 });
+	await speak('"Pretty Good Right?"', true);
+	stopRoll();
+}
